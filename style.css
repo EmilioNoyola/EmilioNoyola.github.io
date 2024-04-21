@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header {
+
+    background-image: url("IMG/4IV9_GUÍA_CREATIVA_\(\ Banner\ \).png");
+    background-position: center; 
+    background-size: cover; 
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.informacion1 {
+    padding: 50px 0;
+    background-color: #000E44;
+    position: relative;
+}
+
+.informacion2 {
+    padding: 50px 0;
+    background-color: #021562;
+    position: relative;
+}
+
+
+.informacion-content1 {
+    text-align: left;
+}
+
+.informacion-content2 {
+    text-align: right;
+}
+
+.informacion-content1 h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #8BEAFF;
+    text-transform: uppercase;
+    padding: 0 50px;
+    margin-bottom: 15px;
+}
+
+.informacion-content2 h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #3DADFF;
+    text-transform: uppercase;
+    padding: 0 50px;
+    margin-bottom: 15px;
+}
+
+.informacion-content1 ul {
+    text-align: left;
+    list-style-type: disc; 
+    margin-left: 20px; 
+    color: #ffffff;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #0052D4;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.btn-1:hover {
+    background-color: #65C7F7;
+}
+
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 25px 0 45px 0;
+}
+
+.banner_inferior {
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.banner_inferior_contenido {
+    display: flex;
+    justify-content: left;
+}
+
+.banner_inferior h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.banner_inferior ul {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+/* Agrega estilos CSS para el panel */
+        .panel {
+            display: none; /* Oculta el panel inicialmente */
+            transition: all 1.5s ease; /* Agrega una transición suave */
+        }
+
+        .panel.show {
+            display: block; /* Muestra el panel cuando la clase 'show' está presente */
+            padding: 0px 0;
+            background-color: #021562;
+            position: relative;
+        }
