@@ -9,127 +9,117 @@
 
 body {
     font-family: "Poppins", sans-serif;
-}
-
-.container {
-    max-width: 1500px;
-    margin: 0 auto;
+    background-color: rgb(114, 210, 255);
 }
 
 .header {
 
-    background-image: url("IMG/4IV9_GUÍA_CREATIVA_\(\ Banner\ \).png");
-    background-position: center; 
-    background-size: cover; 
     min-height: 40vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(87, 188, 235);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+
 }
 
-.informacion1 {
-    padding: 50px 0;
-    background-color: #000E44;
-    position: relative;
-}
+.title {
 
-.informacion2 {
-    padding: 50px 0;
-    background-color: #021562;
-    position: relative;
-}
-
-
-.informacion-content1 {
-    text-align: left;
-}
-
-.informacion-content2 {
-    text-align: right;
-}
-
-.informacion-content1 h2 {
     font-size: 55px;
-    line-height: 70px;
-    color: #8BEAFF;
-    text-transform: uppercase;
-    padding: 0 50px;
-    margin-bottom: 15px;
+    color: #2b2c2d;
+    text-align: center;
+
 }
 
-.informacion-content2 h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #3DADFF;
-    text-transform: uppercase;
-    padding: 0 50px;
-    margin-bottom: 15px;
+.subtitle {
+
+    font-size: 25px;
+    color: #0a3662;
+    text-align: center;
+
 }
 
-.informacion-content1 ul {
-    text-align: left;
-    list-style-type: disc; 
-    margin-left: 20px; 
-    color: #ffffff;
+.container-main {
+    display: flex;
+    flex-direction: column; /* Asegura que las tarjetas se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    min-height: 60vh; /* Ajusta la altura mínima del contenedor */
+    padding: 20px; /* Opcional: margen interno */
+}
+
+
+.card {
+    margin: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgb(77, 166, 207);
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 1000px;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+
+    background-color: rgba(77, 166, 207, 0.771);
+    padding: 150px;
+
 }
 
 .btn-1 {
-    display: inline-block;
+    display: block; /* Asegúrate de que el botón se comporte como un bloque */
+    margin: 20px auto; /* Margen automático horizontal */
+    text-align: center; /* Centra el texto dentro del botón */
     padding: 11px 35px;
-    background-color: #0052D4;
+    background-color: #0a3662;
     color: #F9FAFC;
     text-transform: uppercase;
     border-radius: 15px;
+    width: 300px;
+    transition: all 0.5s ease;
 }
 
 .btn-1:hover {
-    background-color: #65C7F7;
+    background-color: #105090;
 }
 
 h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #323337;
+    color: #0a3662;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
     font-size: 16px;
     color: #ffffff;
     margin: 25px 0 45px 0;
+    text-align: justify;
 }
 
 .banner_inferior {
     padding: 10px 0;
     background-color: #000000;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner_inferior_contenido {
     display: flex;
     justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.banner_inferior h3 {
-    font-size: 18px;
-    color: #F9FAFC;
-    margin-bottom: 15px;
+.textBanner {
+
+    color: white;
+
 }
-
-.banner_inferior ul {
-    font-size: 18px;
-    color: #F9FAFC;
-    margin-bottom: 15px;
-}
-
-/* Agrega estilos CSS para el panel */
-        .panel {
-            display: none; /* Oculta el panel inicialmente */
-            transition: all 1.5s ease; /* Agrega una transición suave */
-        }
-
-        .panel.show {
-            display: block; /* Muestra el panel cuando la clase 'show' está presente */
-            padding: 0px 0;
-            background-color: #021562;
-            position: relative;
-        }
