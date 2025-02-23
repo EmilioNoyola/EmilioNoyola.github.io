@@ -1,0 +1,87 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.principal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cajas, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-group legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.radioInput {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radioInput label {
+    font-weight: normal;
+}
+
+.boton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#enviar {
+    background: #28a745;
+    color: white;
+}
+
+#enviar:hover {
+    background: #218838;
+}
+
+#reset {
+    background: #dc3545;
+    color: white;
+}
+
+#reset:hover {
+    background: #c82333;
+}
